@@ -8,3 +8,15 @@ class MenuItem:
         if get_count >= 3:
             total_price *= 0.8
         return total_price
+
+
+class Food(MenuItem):
+    def __init__(self, name, price, netto):
+        self.netto = netto
+        super().__init__(name, price)
+
+
+class Drink(MenuItem):
+    def __init__(self, name, price, volume):
+        self.volume = volume
+        super().__init__(name, price)

@@ -1,8 +1,8 @@
 import os
 
 
-def validate(number):
-    if number < 0 or number > 3:
+def validate(number1, number2):
+    if (number1 < 1 or number1 > 4) or (number2 < 1 or number2 > 4) == True:
         return False
     return True
 
